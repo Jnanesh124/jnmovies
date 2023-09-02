@@ -226,13 +226,13 @@ async def next_page(bot, query):
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
     remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
     if settings["button"]:
-        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>\n©️@ROCKERSBACKUP"
-    else:        
-        #cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>"    
-        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search} </b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 ➢ {message.chat.title} </i></b>\n<i><b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐏𝐄𝐑𝐒𝐎𝐍 ➢ {message.from_user.mention}\n</i></b>" 
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search}\n\n©️@ROCKERSBACKUP\n\n</b>"
+    else:
+        # cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search}\n\n©️@ROCKERSBACKUP\n\n</b>"        
+        cap = f"<b>𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄 ➢ {search}\n\n©️@ROCKERSBACKUP\n\n</b>"        
         for file in files:
             cap += f"<b>🍿 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
-            
+        
     try:
         await query.message.edit_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
     except MessageNotModified:
