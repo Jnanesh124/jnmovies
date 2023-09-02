@@ -1798,6 +1798,25 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton("Sᴇᴀsᴏɴs", callback_data=f"seasons#{key}")
             ]
         )
+        # if ENABLE_SHORTLINK == True:
+    #     btn.insert(0, [
+    #         InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9")
+    #     ])
+    # else:
+    #     btn.insert(0, [
+    #         InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9")
+    #     ])
+        btn.insert(0, [
+            InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9"),       
+        ])
+    # if ENABLE_TUTORIAL == True:
+    #     btn.insert(0, [
+    #     InlineKeyboardButton("📥Hᴏᴡ ᴛᴏ Dᴏᴡɴʟᴏᴀᴅ📥", url=await get_tutorial(message.chat.id))
+    #     ])
+    # else:
+    #     btn.insert(0, [
+    #     InlineKeyboardButton("📥Hᴏᴡ ᴛᴏ Dᴏᴡɴʟᴏᴀᴅ📥", url=TUTORIAL)
+    #     ])
     else:
         btn = []
     if offset != "":
