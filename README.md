@@ -108,6 +108,8 @@
 * Check [info.py](https://github.com/Singhsawan/Pmshortner2
 ) for more optional variables
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Gowdru123/jnmovies&branch=main&name=dqthefiledonorj)
+</details>
 
 <details><summary>Deploy To Heroku</summary>
 <p>
