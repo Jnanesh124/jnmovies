@@ -149,7 +149,7 @@ async def next_page(bot, query):
             ]
         )   
         btn.insert(0, [
-            InlineKeyboardButton("📥 HOW TODOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9")            
+            InlineKeyboardButton("📥 HOW TODOWNLOAD 📥", url=f"https://t.me/how_to_open_easy/2")            
         ])
     else:
         btn = []
@@ -1800,14 +1800,14 @@ async def auto_filter(client, msg, spoll=False):
         )
         # if ENABLE_SHORTLINK == True:
     #     btn.insert(0, [
-    #         InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9")
+    #         InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_to_open_easy/2")
     #     ])
     # else:
     #     btn.insert(0, [
-    #         InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9")
+    #         InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_to_open_easy/2")
     #     ])
         btn.insert(0, [
-            InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_open_this_link/9"),       
+            InlineKeyboardButton("📥 HOW TO DOWNLOAD 📥", url=f"https://t.me/how_to_open_easy/2"),       
         ])
     # if ENABLE_TUTORIAL == True:
     #     btn.insert(0, [
