@@ -2,8 +2,7 @@ class script(object):
     START_TXT = """<b> I Am Autofilterbot With shartner support 
     So U Can add Ur Using Shartner And earn money 🤑
 
-Owner Of This Bot: <a href="https://t.me/jnaneshtn">jnanesh gowda</a></b> 😏</b>"""
-
+😍Owner @alonekingjnanesh </b>"""
     
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
